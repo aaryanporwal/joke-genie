@@ -2,7 +2,7 @@
 name: 'CLI App'
 description: 'Craft your own CLI App using NodeJS'
 author: '@aaryanporwal'
-img: 'https://cloud-88w3wgzc4.vercel.app/0image.png'
+img: 'https://cloud-pnkyco5ru.vercel.app/0image.png'
 ---
 
 # Craft a Basic CLI App using NodeJS
