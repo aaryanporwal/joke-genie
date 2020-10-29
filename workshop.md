@@ -11,14 +11,14 @@ Ever wondered how commands in terminal (like `cd`, `ls` ) are written?
 Did you ever want to make an app that can run directly in  your terminal or command prompt?
 This workshop will serve as a great starter to make CLI _(short for Command Line Interface)_ apps!
 
-## What will we be making? :think:
+## What will we be making? 🤔
 
 Let's make an app that fetches jokes? 
 Because who doesn't like jokes?
 
 ![A gif that says no idea](https://cloud-grdpgs1h5.vercel.app/0giphy.gif)
 
-You wanna see how the final app looks? Here's the [link](https://xyz.com) to the live demo, and here's the [link](https://repl.it/@aaryanporwal/joke-genie) to the source code.
+You wanna see how the final app looks? Here's the [link](https://uwu.aaryanporwal.repl.run/) to the live demo, and here's the [link](https://repl.it/@aaryanporwal/uwu) to the source code.
 
 ## Part 1: The Prerequisites
 
@@ -27,11 +27,13 @@ You need to have a beginner level understanding of how things work in:
 - Javascript
 - NodeJS
 
+That's it!
+
 ## Part 2: The Setup
 
-You can either do this workshop in your terminal (in MacOS or Linux), Command Prompt (in Windows), or online on [Repl.it](https://repl.it).
+You can either do this workshop in your terminal (in MacOS/Linux), Command Prompt (in Windows), or online on [Repl.it](https://repl.it).
 Doing this workshop on terminal or command prompt is preferred, but Repl.it works great too! (For this workshop I'll be using repl.it)
-So let's begin! :rocket:
+So let's begin 🚀 !
 
 Head over to repl.it and follow the steps to spin up your environment:
 
@@ -96,7 +98,7 @@ The `yargs` module is one such module for Node.js designed to support the most c
 Code Explanation:
 We want our super awesome app to greet the user, for that our app will require a `name` attribute. That's what the code does, it imports yargs module, and then we define the `help` page of our app and ask for `name` attribute, after taking the `name` attribute, our app will greets the user.
 
->Note: The yargs module automatically builds a great response for displaying help! Your CLI is not only ready to accept `-n` and `--name` arguments but also `--help` and `--version`. Try running your CLI application with any of the arguments!
+>Note: The yargs module automatically builds a great response for displaying help! Your CLI is not only ready to accept `-n` and `--name` arguments but also `--help` and `--version`. Try running your CLI application with any of the above arguments!
 
 So try running our code so far by executing `node <your app name.js> -n <your name>`
 
@@ -105,9 +107,9 @@ So try running our code so far by executing `node <your app name.js> -n <your na
 
 ![Code preview](https://cloud-fwazdes5p.vercel.app/0image.png)
 
-Your screen should look similar! If it does, Hoorayyy! **You made your own nodejs application!**
+Your screen should look similar! If it does, Hooray! You made your own nodejs application!
 
-Our app doesn't do a lot of stuff so far, let's get to the next part!!
+But our app doesn't do a lot of stuff right now, so let's get to the next part!!
 
 ## Part 5: Call API from the Command Line
 
@@ -151,9 +153,9 @@ axios.get(url, { headers: { Accept: "application/json" } })
 
 **Code Explanation:**
 
-In addition to responding with a greeting, the CLI application will now retrieve a random joke from the website's [API](https://icanhazdadjoke.com/api) using axios and display it immediately after the greeting.
+In addition to responding with a greeting, the CLI application will now retrieve a random joke from the website's [API](https://icanhazdadjoke.com/api) using axios and display it immediately after the greeting. We'll take a look at how this works in a minute.
 
-**_How does the app look now🤔 ?_**
+**_How does the app look now 🤔 ?_**
 
 ![random joke functionality](https://cloud-3wip6rf0e.vercel.app/0image.png)
 
@@ -161,21 +163,7 @@ _Pretty cool, right?_
 
 ![Oh yes gif](https://cloud-3sjs1qqpt.vercel.app/0oh-yes.gif)
 
-## Where Can You Go From Here?
-
-There are of course a lot of things that you can hack together in your app, but in this workshop we'll take a look at:
-
-1. How to make our app look catchy, and
-
-2. How can you add more features, to make it more powerful.
-
-## How To Make Our App Look Pretty?
-
-Let's take a look at two super cute libraries that we can add to our app:
-
-1. Chalk: 
-
-<summary>## Optional Part A: Adding Search Feature</summary>
+## Optional Part A: Adding Search Feature
 
 For this lovely feature, we'll add another argument: `--search` or `-s` in short. For this we'll summon our _Yargs_ module again 🏴‍☠️ !
 
@@ -224,5 +212,31 @@ axios.get(url, { headers: { Accept: "application/json" } })
 
 Now, where did the above code come from? 
 The website API allows us to do a lot of cool stuff, one of which is searching for a specific keyword from their database of jokes. To read more about how their API works and all the other cool stuff you can do, refer [this](https://icanhazdadjoke.com/api) documentation.
+
+## Where Can You Go From Here?
+
+There are of course a lot of things that you can hack together in your app, but here are some points to ponder:
+
+1. How to make our app look pretty ✨ 
+
+2. Use the API documentation to add more features and to make it more powerful 💪 .
+
+3. How to publish your npm package, for this - checkout one of our hack clubber's awesome workshop [here](https://workshops.hackclub.com/firstnpmpackage/) 🚀 .
+
+### How To Make Our App Look Pretty?
+
+Let's take a look at two super cute libraries that you can add to our app:
+
+1. [Chalk](https://www.npmjs.com/package/chalk): To format your text with colors, underlines, bold, italics and so much more
+
+2. [Boxen](https://www.npmjs.com/package/boxen): Add all your text in a box!!
+
+Now try to implement both of them in your app, first try on your own using the documentation, but if you fail to do so, or you want some inspiration:
+
+[Take a look here](https://repl.it/@aaryanporwal/chalk-boxen#joke-genie.js)
+
+### API Documentation
+
+Take a look at the docs [here](https://icanhazdadjoke.com/api) and try to add more features! _Psst.. you can fetch the jokes as an image too!!!_
 
 
