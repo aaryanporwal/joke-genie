@@ -7,14 +7,18 @@ img: 'https://cloud-88w3wgzc4.vercel.app/0image.png'
 
 # Craft a Basic CLI App using NodeJS
 
-Ever wondered how commands in terminal (like `cd`, `ls` ) are written?
-Did you ever want to make an app that can run directly in  your terminal or command prompt?
+Ever wondered how commands in terminal (like `cd` or `ls` ) are written?
+
+Did you ever want to make an app that can run directly from the comfort of your terminal or command prompt?
+
+Developers love CLI tools because they can work on any operating system and are extremely efficient. This trend is enhanced by the fact that most development platforms these days offer CLI tools first and then add GUI tools on top of that.
+
 This workshop will serve as a great starter to make CLI _(short for Command Line Interface)_ apps!
 
 ## What will we be making? 🤔
 
 Let's make an app that fetches jokes? 
-Because who doesn't like jokes?
+Because ... who doesn't like jokes?
 
 ![A gif that says no idea](https://cloud-grdpgs1h5.vercel.app/0giphy.gif)
 
@@ -33,7 +37,7 @@ That's it!
 
 You can either do this workshop in your terminal (in MacOS/Linux), Command Prompt (in Windows), or online on [Repl.it](https://repl.it).
 Doing this workshop on terminal or command prompt is preferred, but Repl.it works great too! (For this workshop I'll be using repl.it)
-So let's begin 🚀 !
+So let's begin 🚀 
 
 Head over to repl.it and follow the steps to spin up your environment:
 
@@ -100,20 +104,20 @@ We want our super awesome app to greet the user, for that our app will require a
 
 >Note: The yargs module automatically builds a great response for displaying help! Your CLI is not only ready to accept `-n` and `--name` arguments but also `--help` and `--version`. Try running your CLI application with any of the above arguments!
 
-So try running our code so far by executing `node <your app name.js> -n <your name>`
+So try running our code so far by executing `node <your app name.js> -n <your name>`.
 
 
 ### Our App So Far
 
 ![Code preview](https://cloud-fwazdes5p.vercel.app/0image.png)
 
-Your screen should look similar! If it does, Hooray! You made your own nodejs application!
+Your screen should look similar to the above screen!
 
 But our app doesn't do a lot of stuff right now, so let's get to the next part!!
 
-## Part 5: Call API from the Command Line
+## Part 5: Calling API from the Command Line
 
-In this part of the tutorial, we are going to fetch a random joke from a joke API and display it in the console, sounds fun, right?
+In this part of the tutorial, we are going to fetch a random joke from a [jokes database](https://icanhazdadjoke.com/) and display it in the terminal, sounds fun, right?
 
 ![gif saying awesome!](https://cloud-9w3yv7xjz.vercel.app/0awesome-yes.webp)
 
@@ -163,7 +167,7 @@ _Pretty cool, right?_
 
 ![Oh yes gif](https://cloud-3sjs1qqpt.vercel.app/0oh-yes.gif)
 
-## Optional Part A: Adding Search Feature
+## Adding Search Feature
 
 For this lovely feature, we'll add another argument: `--search` or `-s` in short. For this we'll summon our _Yargs_ module again 🏴‍☠️ !
 
@@ -186,7 +190,7 @@ const greeting = `Hello, ${options.name}👋 \n`;
 console.log(greeting);
 
 if (options.search) {
- console.log(`Searching for jokes about ${options.search}...`)
+ console.log(`Searching for jokes about ${options.search}....`)
 } else {
  console.log("Here's a random joke for you:");
 }
@@ -210,8 +214,14 @@ axios.get(url, { headers: { Accept: "application/json" } })
  });
 ```
 
-Now, where did the above code come from? 
+_Now, where did the above code come from?_
+
 The website API allows us to do a lot of cool stuff, one of which is searching for a specific keyword from their database of jokes. To read more about how their API works and all the other cool stuff you can do, refer [this](https://icanhazdadjoke.com/api) documentation.
+
+Alright you did it! But the journey has just begun - 
+_"A journey of a thousand miles begins with a single step."_
+
+This was your first step, there's a whole journey ahead, enjoy it!
 
 ## Where Can You Go From Here?
 
@@ -221,7 +231,7 @@ There are of course a lot of things that you can hack together in your app, but 
 
 2. Use the API documentation to add more features and to make it more powerful 💪 .
 
-3. How to publish your npm package, for this - checkout one of our hack clubber's awesome workshop [here](https://workshops.hackclub.com/firstnpmpackage/) 🚀 .
+3. How to publish your npm package, for this - checkout one of our hack club hacker's awesome workshop [here](https://workshops.hackclub.com/firstnpmpackage/) 🚀 .
 
 ### How To Make Our App Look Pretty?
 
@@ -239,4 +249,32 @@ Now try to implement both of them in your app, first try on your own using the d
 
 Take a look at the docs [here](https://icanhazdadjoke.com/api) and try to add more features! _Psst.. you can fetch the jokes as an image too!!!_
 
+## The End
 
+You've made a fully functional node.js cli application, you've learnt how to use `yargs` to make cool help messages, `axion` to handle API data and you upped your node.js skills!
+
+## Additional Resources
+
+Here are some resources to help you in your CLI-ninja 🥷  journey:
+
+- Need ideas to make your own CLI app? Check out this [awesome list](https://github.com/agarrharr/awesome-cli-apps) for a plethora of ideas with source code too! (literally awesome!)
+  
+- [nexe](https://github.com/nexe/nexe) - To create a single executable out of a node.js app
+  
+- [node.js cli best practices](https://github.com/lirantal/nodejs-cli-apps-best-practices) - Nodejs cli app best practices
+
+
+## Sharing With The Community
+
+Now that you have finished building this wonderful project, you should share your own creation with other people! Remember, it's just as easy as giving them your URL!
+
+Or better yet you can publish this app on npm!
+
+Now, You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on our Slack.
+
+1. In a new tab, open and follow [these directions](https://hackclub.com/slack/) to sign-up for our Slack.
+2. Then, post the link to the [`#scrapbook`](https://hackclub.slack.com/messages/scrapbook) channel to share it with everyone! Also ping me with what you've built!
+
+And if you liked the workshop, or didn't, or need help with something - I'm @aaryanporwal on slack, you can always contact me or thousands of other hackers! 
+
+All the best with your journey ahead! ^_^
