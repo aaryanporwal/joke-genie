@@ -218,7 +218,8 @@ _Now, where did the above code come from?_
 
 The website API allows us to do a lot of cool stuff, one of which is searching for a specific keyword from their database of jokes. To read more about how their API works and all the other cool stuff you can do, refer [this](https://icanhazdadjoke.com/api) documentation.
 
-Alright you did it! But the journey has just begun - 
+**Alright you did it! But the journey has just begun** - 
+
 _"A journey of a thousand miles begins with a single step."_
 
 This was your first step, there's a whole journey ahead, enjoy it!
@@ -249,9 +250,26 @@ Now try to implement both of them in your app, first try on your own using the d
 
 Take a look at the docs [here](https://icanhazdadjoke.com/api) and try to add more features! _Psst.. you can fetch the jokes as an image too!!!_
 
-## The End
+## Some Other Apps You Can Stem From Here
 
-You've made a fully functional node.js cli application, you've learnt how to use `yargs` to make cool help messages, `axion` to handle API data and you upped your node.js skills!
+- Want a taste of wisdom each day, straight from an owl 🦉 ?
+
+    Check out [QOTD](https://QOTD.aaryanporwal.repl.run) - QuoteOfTheDay app that works similar to the above workshop, and uses a REST [API](https://quotes.rest/qod). 
+
+    Source Code for QOTD is [here](https://repl.it/@aaryanporwal/QOTD)
+
+- Wanna know today's weather 🌧 before heading out, right in your terminal?
+
+    Check out [Weather-CLI](https://weather-cli.aaryanporwal.repl.run/) - A simple weather CLI app, which uses [OpenWeather](https://openweathermap.org/). Open weather's API is very powerful and also requires an api key to use. Nowadays a lot of APIs require API keys, this example can help you understand how to use them.
+
+    Source Code for Weather CLI is [here](https://repl.it/@aaryanporwal/weather-cli)
+        
+
+## What You've Learnt
+
+You've made a fully functional Node.js cli application, you've learnt how to easily parse command-line arguments using `yargs` and to make cool help messages, and you learnt how to use`axion` to work with APIs, and you upped your `Node.js` skills!
+
+Next, you can learn how to [publish](https://workshops.hackclub.com/firstnpmpackage/) your first npm package!
 
 ## Additional Resources
 
@@ -262,7 +280,6 @@ Here are some resources to help you in your CLI-ninja 🥷  journey:
 - [nexe](https://github.com/nexe/nexe) - To create a single executable out of a node.js app
   
 - [node.js cli best practices](https://github.com/lirantal/nodejs-cli-apps-best-practices) - Nodejs cli app best practices
-
 
 ## Sharing With The Community
 
